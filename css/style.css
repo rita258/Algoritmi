@@ -1,0 +1,58 @@
+body.light-theme {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fa;
+  color: #222;
+}
+.container { max-width: 960px; margin: 40px auto; padding: 20px; }
+.center-text { text-align: center; }
+.description { font-size: 1.1em; margin: 15px auto; max-width: 600px; }
+.start-btn {
+  display: inline-block; padding: 12px 24px; background: #007bff; color: #fff;
+  text-decoration: none; border-radius: 8px; font-size: 1.1em; margin-top: 20px; transition: 0.3s;
+}
+.start-btn:hover { background: #0056b3; }
+.back-btn {
+  display: inline-flex; align-items: center; padding: 10px 20px;
+  background: #6c757d; color: #fff; text-decoration: none; border-radius: 6px;
+}
+.banner-image {
+  width: 100%; max-width: 600px; margin-bottom: 20px; border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.stage-grid {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;
+}
+.stage-card {
+  width: 180px; height: 180px; background: #fff; border-radius: 10px;
+  text-align: center; padding: 15px; color: #222; text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s;
+}
+.stage-card:hover:not(.locked) {
+  transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.stage-card img { width: 100%; height: 90px; object-fit: contain; }
+.stage-card span { display: block; margin-top: 10px; font-weight: bold; }
+.stage-card.locked { pointer-events: none; background: #ddd; opacity: 0.5; }
+.stage-card.completed {
+  background: #d1e7dd; border: 2px solid #0f5132; color: #0f5132;
+}
+#progress-container { height: 10px; background: #ccc; border-radius: 5px; overflow: hidden; margin: 20px 0; }
+#progress-bar { height: 100%; background: #28a745; width: 0%; transition: 0.3s; }
+.scene-block { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+.nav-btns { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+.reset-btn {
+  display: inline-flex; align-items: center; padding: 10px 20px;
+  background: #dc3545; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: 0.3s;
+}
+.reset-btn:hover { background: #b02a37; }
+button.submit-btn {
+  display: inline-flex; align-items: center; padding: 10px 20px;
+  background: #198754; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: 0.3s;
+}
+button.submit-btn:hover { background: #146c43; }
+.task-block { margin-bottom: 30px; }
+#final-congrats {
+  padding: 20px; background: #d1e7dd; color: #0f5132;
+  border-radius: 10px; text-align: center; margin-top: 30px; font-size: 1.2em;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Этапы квеста</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="light-theme">
+  <div class="container">
+    <h2>🧩 Этапы восстановления базы данных</h2>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    <div id="final-congrats" style="display:none;">🎉 Поздравляем! Все этапы пройдены!</div>
+    <div class="stage-grid">
+      <a href="quest.html?scene=scene-1" class="stage-card" data-scene="scene-1"><img src="images/icon1.jpeg"><span>1. Анализ базы</span></a>
+      <a href="quest.html?scene=scene-2" class="stage-card locked" data-scene="scene-2"><img src="images/icon2.png"><span>2. Ключи и индексы</span></a>
+      <a href="quest.html?scene=scene-3" class="stage-card locked" data-scene="scene-3"><img src="images/icon3.png"><span>3. Нормализация</span></a>
+      <a href="quest.html?scene=scene-4" class="stage-card locked" data-scene="scene-4"><img src="images/icon4.png"><span>4. Связи (ER)</span></a>
+      <a href="quest.html?scene=scene-5" class="stage-card locked" data-scene="scene-5"><img src="images/icon5.jpg"><span>5. Верификация и запуск</span></a>
+    </div>
+    <div class="nav-btns">
+      <a href="index.html" class="back-btn">← Назад</a>
+      <button onclick="resetProgress()" class="reset-btn">🔁 Сбросить прогресс</button>
+    </div>
+  </div>
+  <script src="js/progress.js"></script>
+</body>
+</html>
